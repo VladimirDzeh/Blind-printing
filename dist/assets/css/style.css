@@ -1,0 +1,191 @@
+* {
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+    background: lavender;
+}
+.container {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.hidden {
+	display: none;
+}
+.results-title {
+	display: -webkit-box;
+	display: flex;
+	font-family: 'Roboto Mono', monospace;
+	margin-bottom: 15px;
+	font-weight: 600;
+}
+.logo {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 900;
+	font-size: 28px;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+h1 {
+    line-height: 12px;
+}
+.indicators {
+	display: -webkit-box;
+	display: flex;
+	border-radius: 8px;
+	border: 1px solid #d9d9d9;
+	margin-bottom: 35px;
+	padding-left: 5px;
+	padding-right: 5px;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+}
+.indicator {
+	display: -webkit-box;
+	display: flex;
+	font-size: 15px;
+	font-family: 'Roboto Mono', monospace;
+	border-right: 1px solid #d9d9d9;
+	padding: 10px;
+}
+.indicator:last-child {
+	border-right: none;
+}
+.indicator__icon {
+	margin-right: 13px;
+}
+.indicator__icon-alarm {
+    width: 16px;
+}
+.indicator__name {
+    line-height: 17px;
+}
+.indicator__value {
+    line-height: 19px;
+}
+.input {
+	width: 100%;
+	padding: 10px 0;
+	margin-bottom: 20px;
+	border: 3px solid transparent;
+    border-radius: 5px;
+	outline: none;
+	font-family: 'Roboto Mono', monospace;;
+	font-size: 18px;
+	transition: all 0.1s ease-in;
+    padding-left: 15px;
+}
+.input.blur {
+	border: 3px solid black;
+}
+.input.error {
+	background-color: pink;
+}
+.text {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 18px;
+	margin-bottom: 35px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+.text .line {
+	height: 1.5em;
+	margin-bottom: 1px;
+}
+.text .done {
+	color: #d9d9d9;
+}
+.text .hint {
+	background-color: pink;
+}
+.text.error {
+	color: #ff0000;
+}
+
+.keyboard .line {
+	display: -webkit-box;
+	display: flex;
+    justify-content: space-around;
+}
+.keyboard .line div {
+	width: 49px;
+	height: 49px;
+	line-height: 42px;
+	font-size: 15px;
+	border: 1px solid #c7d0d4;
+	background: #fff;
+	margin: 1px;
+	padding: 5px;
+	text-align: center;
+	border-radius: 5px;
+}
+.keyboard .line div.hint {
+	background: #c7d0d4;
+}
+.keyboard .line .backspace {
+	width: 75px;
+	text-align: right;
+	color: #ddd;
+	font-size: 10px;
+}
+.keyboard .line .tab {
+	width: 75px;
+	text-align: left;
+	color: #95a0a4;
+	font-size: 10px;
+}
+.keyboard .line .caps {
+	width: 87px;
+	text-align: left;
+	color: #95a0a4;
+	font-size: 10px;
+}
+.keyboard .line .enter {
+	width: 88px;
+	text-align: right;
+	color: #95a0a4;
+	font-size: 10px;
+}
+.keyboard .line .shift {
+	width: 113px;
+	text-align: left;
+	color: #95a0a4;
+	font-size: 10px;
+}
+.keyboard .line .shift:last-child {
+	text-align: right;
+}
+.keyboard .line .space {
+	margin-left: auto;
+	width: 312px;
+	text-align: right;
+	color: #95a0a4;
+	font-size: 10px;
+}
+.keyboard .line .alt {
+	width: 88px;
+	text-align: right;
+	color: #95a0a4;
+	font-size: 10px;
+	margin-right: auto;
+}
+
+
+/* add */
+.pressed {
+    background-color: #c7d0d4 !important;
+}
+.pl-15 {
+	padding-left: 15px;
+}
