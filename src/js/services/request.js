@@ -8,4 +8,4 @@ const getText = async (url) => {
     return await res.json();
 };
 
-export { getText };
+export default getText;
