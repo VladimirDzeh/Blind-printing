@@ -1,3 +1,4 @@
+
 const getText = async (url) => {
     let res = await fetch(url);
 
@@ -8,4 +9,6 @@ const getText = async (url) => {
     return await res.json();
 };
 
-export default getText;
+
+
+export { getText };
