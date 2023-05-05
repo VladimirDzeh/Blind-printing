@@ -1,6 +1,9 @@
 import { letters, party, specs } from "../constants/consts";
 import { viewUpdate } from "./view";
 
+// Функция keydownHandler обрабатывает нажатие клавиш, проверяет, является ли нажатая клавиша
+// буквой или символом, и соответствующим образом обновляет статистику ввода, вызывая функцию press.
+
 function keydownHandler(event) {
     event.preventDefault();
 
@@ -33,6 +36,11 @@ function keydownHandler(event) {
     alert(`Неизвестный вид клавиши!`, event);
 
 }
+
+// Функция keyupHandler обрабатывает отпускание клавиш и удаляет класс 'pressed',
+// который был добавлен функцией keydownHandler. 
+
+
 function keyupHandler(event) {
     event.preventDefault();
 
@@ -56,6 +64,8 @@ function keyupHandler(event) {
         return;
     }
 }
+
+// Функция press отслеживает нажатия клавиш и обновляет статистику ввода в соответствии с нажатой клавишей. 
 
 function press(letter) {
     party.started = true;

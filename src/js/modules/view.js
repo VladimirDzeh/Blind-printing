@@ -1,3 +1,5 @@
+// Функция viewUpdate обновляет информацию на странице в соответствии с текущим состоянием объекта party.
+
 import { party, input, symbolsPerMinute, errorPercent, textExample } from "../constants/consts";
 
 function viewUpdate() {
